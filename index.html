@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Umar Farooq | Web & Android App Developer" />
+  <meta name="description" content="Umar Farooq – Web & Android App Developer from Pakistan. Freelance web development, frontend design, and Android app projects. Available for hire." />
+  <meta name="keywords" content="Web Developer, Android Developer, Freelance, Pakistan, UI/UX, React, JavaScript" />
+  <meta name="author" content="Umar Farooq" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://umarfarooq.dev/" />
+  <meta property="og:title" content="Umar Farooq | Web & Android App Developer" />
+  <meta property="og:description" content="Web & Android App Developer from Pakistan. Freelance web development, frontend design, and Android app projects." />
+  <meta property="og:image" content="https://umarfarooq.dev/assets/og-image.jpg" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Umar Farooq | Web & Android App Developer" />
+  <meta name="twitter:description" content="Web & Android App Developer from Pakistan." />
+  
+  <title>Umar Farooq | Web & Android App Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Umar Farooq",
+    "jobTitle": "Web & Android App Developer",
+    "url": "https://umarfarooq.dev",
+    "email": "umarfarooq360official@gmail.com",
+    "telephone": "+923421046878",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Pakistan"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/umarfarooq_dev",
+      "https://github.com/umarfarooq_dev",
+      "https://fiverr.com/umarfarooq_dev"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========== SCROLL PROGRESS BAR ========== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Umar<span>.</span>Farooq</a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home"          class="nav-link">Home</a></li>
+          <li><a href="#about"         class="nav-link">About</a></li>
+          <li><a href="#skills"        class="nav-link">Skills</a></li>
+          <li><a href="#services"      class="nav-link">Services</a></li>
+          <li><a href="#projects"      class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#testimonials"  class="nav-link">Testimonials</a></li>
+          <li><a href="#contact"       class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme Toggle Button -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+      <!-- Hamburger button for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="home">
+      <!-- Particles Background -->
+      <div class="hero-particles" id="heroParticles"></div>
+
+      <div class="hero-container">
+
+        <!-- Text side -->
+        <div class="hero-text">
+          <p class="hero-label"><span class="dot"></span> Available for work</p>
+          <h1 class="hero-heading">
+            Hi, I'm <span class="accent">Umar Farooq</span><span class="cursor">|</span>
+          </h1>
+          <h2 class="hero-role">Web &amp; Android App Developer</h2>
+          <p class="hero-intro">
+            I create clean websites, frontend layouts, Android app screens, and practical digital solutions.
+            I focus on web development, Android Studio, UI design, debugging, and improving projects through real practice.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact"  class="btn btn-outline">Contact Me</a>
+            <a href="https://wa.me/923421046878" target="_blank" class="btn btn-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Hire Me
+            </a>
+          </div>
+          <!-- Quick stats -->
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-num">14+</span><span class="stat-label">Skills</span></div>
+            <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">Certifications</span></div>
+          </div>
+        </div>
+
+        <!-- Image side -->
+        <div class="hero-image-wrap">
+          <div class="hero-image-ring">
+            <img
+              src="assets/profile.png"
+              alt="Umar Farooq – Web & Android App Developer"
+              class="hero-image"
+              loading="lazy"
+              onerror="this.style.display='none'; document.querySelector('.hero-image-fallback').style.display='flex';"
+            />
+            <!-- Fallback if image is missing -->
+            <div class="hero-image-fallback" style="display:none;">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+          <!-- Floating tech badges -->
+          <div class="badge badge-html"><i class="fa-brands fa-html5"></i> HTML</div>
+          <div class="badge badge-android"><i class="fa-brands fa-android"></i> Android</div>
+          <div class="badge badge-js"><i class="fa-brands fa-js"></i> JS</div>
+        </div>
+
+      </div>
+
+      <!-- Scroll hint -->
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Who I am</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a motivated Web and Android App Developer from Pakistan. I have experience in building and customizing
+              websites, designing clean frontend layouts, working with Android Studio, creating mobile app screens, and
+              improving projects through debugging and planning.
+            </p>
+            <p>
+              I am currently focused on improving my skills in HTML, CSS, JavaScript, Android development, UI design,
+              and modern development workflows. My goal is to work on real projects, learn from experienced developers,
+              and build useful digital products.
+            </p>
+            <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.5rem;">
+              <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+              <a href="assets/cv.pdf" download class="btn btn-outline">
+                <i class="fa-solid fa-download"></i> Download Resume
+              </a>
+            </div>
+          </div>
+
+          <!-- Trait cards -->
+          <div class="trait-cards">
+            <div class="trait-card">
+              <div class="trait-icon"><i class="fa-solid fa-book-open"></i></div>
+              <h3>Practical Learner</h3>
+              <p>I learn best by doing — building real things, fixing real bugs, and understanding how everything connects.</p>
+            </div>
+            <div class="trait-card">
+              <div class="trait-icon"><i class="fa-solid fa-palette"></i></div>
+              <h3>Clean Design</h3>
+              <p>I care about making interfaces that feel clear, easy to use, and visually consistent across devices.</p>
+            </div>
+            <div class="trait-card">
+              <div class="trait-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+              <h3>Problem Solving</h3>
+              <p>Whether it's a layout bug or an app logic issue, I enjoy digging in and finding a clean solution.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">What I work with</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-badge"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+          <div class="skill-badge"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+          <div class="skill-badge"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+          <div class="skill-badge"><i class="fa-solid fa-globe"></i><span>Web Development</span></div>
+          <div class="skill-badge"><i class="fa-solid fa-layer-group"></i><span>Frontend Design</span></div>
+          <div class="skill-badge"><i class="fa-brands fa-android"></i><span>Android Studio</span></div>
+          <div class="skill-badge"><i class="fa-solid fa-mobile-screen"></i><span>Android App Dev</span></div>
+          <div class="skill-badge"><i class="fa-solid fa-tablet-screen-button"></i><span>Mobile App Dev</span></div>
+          <div class="skill-badge"><i class="fa-solid fa-pen-ruler"></i><span>UI Design</span></div>
+          <div class="skill-badge"><i class="fa-solid fa-bug"></i><span>Debugging</span></div>
+          <div class="skill-badge"><i class="fa-solid fa-rocket"></i><span>App Publishing</span></div>
+          <div class="skill-badge"><i class="fa-solid fa-diagram-project"></i><span>Project Planning</span></div>
+          <div class="skill-badge"><i class="fa-solid fa-robot"></i><span>Automation Basics</span></div>
+          <div class="skill-badge"><i class="fa-solid fa-cube"></i><span>3D Modeling Basics</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">What I offer</span>
+          <h2 class="section-title">Services</h2>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Website Development</h3>
+            <p>Building clean, responsive websites from scratch using HTML, CSS, and JavaScript with a focus on usability and structure.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-sliders"></i></div>
+            <h3>Website Customization</h3>
+            <p>Updating and improving existing websites — redesigning layouts, adjusting sections, and fixing inconsistencies.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-object-group"></i></div>
+            <h3>Frontend UI Design</h3>
+            <p>Designing visually consistent, responsive user interfaces with clean spacing, typography, and color systems.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+            <h3>Android App UI</h3>
+            <p>Designing Android app screens and user flows with a clean, intuitive interface using Android Studio.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-brands fa-android"></i></div>
+            <h3>Android Studio Project Support</h3>
+            <p>Helping with Android project setup, layout design, basic logic, and resolving common build or runtime issues.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-bug-slash"></i></div>
+            <h3>Code Debugging</h3>
+            <p>Finding and fixing bugs in HTML, CSS, JavaScript, or Android projects to make code cleaner and more reliable.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+            <h3>App Publishing Support</h3>
+            <p>Assisting with preparing apps for publishing — APK generation, Play Store basics, and submission guidelines.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+            <h3>Basic Automation Ideas</h3>
+            <p>Exploring simple automation concepts for repetitive web tasks, scripts, or workflow improvements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">What I've built</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/umarfarooq_dev/project-1" target="_blank" aria-label="View on GitHub" title="View on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Live demo" title="Live demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <h3>Responsive Website Design</h3>
+            <p>Created a clean responsive website layout using HTML, CSS, and JavaScript with mobile-friendly sections and smooth navigation.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span>
+            </div>
+            <a href="#" target="_blank" class="btn btn-outline btn-sm">View Project</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/umarfarooq_dev/project-2" target="_blank" aria-label="View on GitHub" title="View on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Live demo" title="Live demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <h3>Android App UI Design</h3>
+            <p>Designed mobile app screens and basic user flow using Android Studio concepts, focusing on layout structure and clean UX.</p>
+            <div class="project-tags">
+              <span>Android Studio</span><span>UI Design</span><span>XML Layouts</span>
+            </div>
+            <a href="#" target="_blank" class="btn btn-outline btn-sm">View Project</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-icon"><i class="fa-solid fa-pen-to-square"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/umarfarooq_dev/project-3" target="_blank" aria-label="View on GitHub" title="View on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Live demo" title="Live demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <h3>Website Customization</h3>
+            <p>Customized website sections, buttons, layouts, and product-style pages to improve user experience and visual consistency.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>UX</span><span>Frontend</span>
+            </div>
+            <a href="#" target="_blank" class="btn btn-outline btn-sm">View Project</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/umarfarooq_dev/project-4" target="_blank" aria-label="View on GitHub" title="View on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Live demo" title="Live demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <h3>Debugging &amp; Code Improvement</h3>
+            <p>Practiced fixing coding issues, improving project structure, and making codebases cleaner, more readable, and easier to maintain.</p>
+            <div class="project-tags">
+              <span>Debugging</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="#" target="_blank" class="btn btn-outline btn-sm">View Project</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CERTIFICATIONS SECTION ========== -->
+    <section class="certifications section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Learning milestones</span>
+          <h2 class="section-title">Certifications</h2>
+        </div>
+
+        <div class="cert-list">
+
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert-body">
+              <h3>Full Stack Web Engineer in 1 Year</h3>
+              <span class="cert-issuer">NITSEP</span>
+            </div>
+            <div class="cert-badge"><i class="fa-solid fa-check"></i></div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert-body">
+              <h3>Introduction to Computer Software and Digital Skills</h3>
+              <span class="cert-issuer">Youth Skills Development Program</span>
+            </div>
+            <div class="cert-badge"><i class="fa-solid fa-check"></i></div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert-body">
+              <h3>Agribusiness and Leadership</h3>
+              <span class="cert-issuer">Vision21 / Youth Skills Development Program</span>
+            </div>
+            <div class="cert-badge"><i class="fa-solid fa-check"></i></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">What people say</span>
+          <h2 class="section-title">Testimonials</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Umar built a clean, responsive website for my business. His attention to detail and communication were excellent. Highly recommended!"</p>
+            <div class="testimonial-author">
+              <strong>Ahmed R.</strong>
+              <span>Small Business Owner</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>"I needed help with my Android app UI. Umar provided clean, professional designs and was very easy to work with. Great experience!"</p>
+            <div class="testimonial-author">
+              <strong>Sarah K.</strong>
+              <span>App Developer</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Umar fixed bugs in my website quickly and efficiently. He understood the issues and delivered solutions fast. Will work with him again!"</p>
+            <div class="testimonial-author">
+              <strong>Muhammad Z.</strong>
+              <span>Freelance Client</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Get in touch</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-subtitle">I'm open to freelance projects, internship opportunities, and junior developer roles. Feel free to reach out.</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-info">
+
+            <a href="mailto:umarfarooq360official@gmail.com" class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">umarfarooq360official@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/923421046878" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <div class="contact-item-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <span class="contact-item-label">Phone / WhatsApp</span>
+                <span class="contact-item-value">03421046878</span>
+              </div>
+            </a>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-value">Pakistan</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Social Links -->
+          <div class="contact-social">
+            <a href="https://linkedin.com/in/umarfarooq_dev" target="_blank" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/umarfarooq_dev" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://fiverr.com/umarfarooq_dev" target="_blank" aria-label="Fiverr">
+              <i class="fa-brands fa-fiverr"></i>
+            </a>
+            <a href="https://youtube.com/@umarfarooq_dev" target="_blank" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://twitter.com/umarfarooq_dev" target="_blank" aria-label="Twitter/X">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+
+          <div class="contact-actions">
+            <a href="mailto:umarfarooq360official@gmail.com" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-envelope"></i> Email Me
+            </a>
+            <a href="https://wa.me/923421046878" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-name">Umar<span>.</span>Farooq</p>
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/umarfarooq_dev" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/umarfarooq_dev" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://fiverr.com/umarfarooq_dev" target="_blank" aria-label="Fiverr">
+          <i class="fa-brands fa-fiverr"></i>
+        </a>
+      </div>
+      <p class="footer-copy">© 2026 Umar Farooq. All Rights Reserved.</p>
+      <p class="footer-tagline">Built with passion for web and app development.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
